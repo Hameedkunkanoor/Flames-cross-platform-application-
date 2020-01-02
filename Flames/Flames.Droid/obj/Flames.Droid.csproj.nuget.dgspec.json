@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Droid\\Flames.Droid.csproj": {}
+    "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Droid\\Flames.Droid.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj": {
+    "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj",
         "projectName": "Flames.Core",
-        "projectPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj",
+        "projectPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj",
         "packagesPath": "C:\\Users\\Hameed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\obj\\",
+        "outputPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Droid\\Flames.Droid.csproj": {
+    "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Droid\\Flames.Droid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Droid\\Flames.Droid.csproj",
+        "projectUniqueName": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Droid\\Flames.Droid.csproj",
         "projectName": "Flames.Droid",
-        "projectPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Droid\\Flames.Droid.csproj",
+        "projectPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Droid\\Flames.Droid.csproj",
         "packagesPath": "C:\\Users\\Hameed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Droid\\obj\\",
+        "outputPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Droid\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -108,8 +108,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj": {
-                "projectPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj"
+              "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj": {
+                "projectPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj"
               }
             }
           }

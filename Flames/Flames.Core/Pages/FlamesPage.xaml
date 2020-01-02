@@ -1,52 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <mvx:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     xmlns:forms="using:Xamarin.Forms" xmlns:mvx="clr-namespace:MvvmCross.Forms.Core;assembly=MvvmCross.Forms"
-                    x:Class="Flames.Core.Pages.FlamesPage"  BackgroundColor="White"  NavigationPage.HasNavigationBar="True"
+                    xmlns:local="clr-namespace:Flames.Core"
+                    x:Class="Flames.Core.Pages.FlamesPage"  BackgroundColor="White"  NavigationPage.HasNavigationBar="False"
                     NavigationPage.HasBackButton="False"
-                    Title="Flames For you">
-    <mvx:MvxContentPage.Padding Thickness="5, 0, 5, 5">
+                   Title="Flames For you">
+    <mvx:MvxContentPage.Padding Thickness="0, 0, 0, 0">
         <OnPlatform x:TypeArguments="Thickness">
-            <On Platform="Android" Value="5, 0, 5, 0" />
+            <On Platform="Android" Value="0, 0, 0, 0" />
             <On Platform="iOS" Value="5, 20, 5, 0" />
         </OnPlatform>
     </mvx:MvxContentPage.Padding>
-    <Grid Padding="10,10,10,10" >
+   
+    <Grid Padding="0,0,0,0" >
 
         <Grid.RowDefinitions >
-            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.6*" />
            
-            <RowDefinition Height="0.3*" />
+            <RowDefinition Height="0.2*" />
             
            
 
         </Grid.RowDefinitions>
-        <StackLayout  Grid.Row="0">
-            <StackLayout Padding="15,10,15,15" >
+        <StackLayout Grid.Row="0" HeightRequest="55" BackgroundColor="Orange" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Font="22" Text="Flames It Now" FontFamily="cursive" TextColor="White"/>
+        </StackLayout>
+        <StackLayout  Grid.Row="1" Padding="0,30,0,0">
+            <StackLayout Padding="10,10,10,15" HorizontalOptions="Center" VerticalOptions="StartAndExpand" >
 
-                <Label Font="!6" Text="First Name" TextColor="Orange" />
-                
-                <Frame HeightRequest="40"  Padding="0"  CornerRadius="10" OutlineColor="Red" >
-                    <Entry  HorizontalOptions="FillAndExpand" 
-                            Placeholder="Enter Your Name"    VerticalOptions="FillAndExpand"
-                            FontSize="Large" HeightRequest="40" BackgroundColor="Green"   
+                <Label HorizontalOptions="Start" HorizontalTextAlignment="Start" FontFamily="cursive"  Font="22" Text="First Name" TextColor="Orange" />
+
+                <Frame HeightRequest="50"  Padding="0"  CornerRadius="10" OutlineColor="Green" >
+                    <local:HameedEntry  HorizontalOptions="FillAndExpand" 
+                            Placeholder="Enter Your Name" PlaceholderColor="#F3F3D5" FontSize="Large"    VerticalOptions="FillAndExpand"
+                                BackgroundColor="White"
                             Text="{Binding FirstName,Mode=TwoWay}" TextColor="Red"/>
                 </Frame>
             </StackLayout>
-            <StackLayout >
+            <StackLayout  Padding="10,10,10,15" HorizontalOptions="Center" VerticalOptions="Center" >
 
-                <Label Text="Second Name" TextColor="Orange" />
-                <Frame HeightRequest="40" Padding="0" CornerRadius="10" OutlineColor="Red">
-                    <Entry InputTransparent="True"  Text="{Binding SecondName,Mode=TwoWay}" TextColor="Red"/>
+                <Label HorizontalOptions="Start" HorizontalTextAlignment="Start" Font="22"  Text="Second Name" TextColor="Orange" />
+                <Frame HeightRequest="50" Padding="0" CornerRadius="10" OutlineColor="Green">
+                    <local:HameedEntry  HorizontalOptions="FillAndExpand" PlaceholderColor="#F3F3D5"
+                            Placeholder="Enter Your Name" FontSize="Large"    VerticalOptions="FillAndExpand"
+                             HeightRequest="40" BackgroundColor="White"  
+                                        Text="{Binding SecondName,Mode=TwoWay}" TextColor="Red"/>
                 </Frame>
             </StackLayout>
         </StackLayout>
-        <StackLayout Grid.Row="1">
+        <StackLayout Grid.Row="2">
 
             
            
-                <Button Text="Find" Command="{Binding FindFlames}" BorderColor="Red" TextColor="White" BackgroundColor="Orange"/>
+                <Button HorizontalOptions="Center" VerticalOptions="Center" Text="Find" FontFamily="cursive" Command="{Binding FindFlames}" BorderRadius="20"
+                        WidthRequest="75" HeightRequest="45"  BorderColor="Red" TextColor="White" BackgroundColor="Orange"/>
    
         </StackLayout>
+        <ContentView BackgroundColor="#FCFCD8" IsVisible="{Binding ShowFlamesResult}" Grid.RowSpan="3" >
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center"  WidthRequest="400" HeightRequest="400"
+                         
+                         >
+                <Frame BackgroundColor="#FB7837" CornerRadius="25" >
+                    <Label TextColor="White" FontFamily="cursive" FontSize="Large" Text="{Binding FlamesResult,Mode=TwoWay}"/>
 
+
+                </Frame>
+                  </StackLayout>
+                    </ContentView>
     </Grid>
 </mvx:MvxContentPage>

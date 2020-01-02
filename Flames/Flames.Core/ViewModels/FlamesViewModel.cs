@@ -14,6 +14,21 @@ namespace Flames.Core.ViewModels
             this.navigationService = navigationService;
         }
 
+        
+
+
+             bool showFlamesResult = false;
+
+        public bool ShowFlamesResult
+        {
+            get { return showFlamesResult; }
+            set
+            {
+                if (SetProperty(ref showFlamesResult, value))
+                    RaisePropertyChanged(() => ShowFlamesResult);
+            }
+        }
+
 
         string flamesResult = string.Empty;
 
@@ -82,7 +97,7 @@ namespace Flames.Core.ViewModels
                         Second = SecondName.Substring(j, 1);
                         if (First == Second)
                         {
-                            Match = Match + (First + Second);
+                            Match = Match + "1";
                         }
                     }
                 }
@@ -90,9 +105,29 @@ namespace Flames.Core.ViewModels
                 int FinalResult=TotalLetters-FinalLetters;
                 if(FinalResult%6==1)
                 {
-
+                    FlamesResult = "Friends For Life";
                 }
-
+               else if (FinalResult % 6 == 2)
+                {
+                    FlamesResult = " Congratulations Love Birds ";
+                }
+               else if (FinalResult % 6 == 3)
+                {
+                    FlamesResult = "Affair";
+                }
+               else if (FinalResult % 6 == 4)
+                {
+                    FlamesResult = "Happy Married life";
+                }
+               else if (FinalResult % 6 == 5)
+                {
+                    FlamesResult = "Born as Enemies";
+                }
+               else if (FinalResult % 6 == 0)
+                {
+                    FlamesResult = "Sweet";
+                }
+                ShowFlamesResult = true;
             }
            
               

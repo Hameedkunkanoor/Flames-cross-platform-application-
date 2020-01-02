@@ -5779,11 +5779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.iOS\\Flames.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.iOS\\Flames.iOS.csproj",
       "projectName": "Flames.iOS",
-      "projectPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.iOS\\Flames.iOS.csproj",
+      "projectPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.iOS\\Flames.iOS.csproj",
       "packagesPath": "C:\\Users\\Hameed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -5804,8 +5804,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj": {
-              "projectPath": "C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Flames.Core.csproj"
+            "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj": {
+              "projectPath": "C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames\\Flames.Core\\Flames.Core.csproj"
             }
           }
         }

@@ -11,7 +11,8 @@
 namespace Flames.Core {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Application.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames" +
+        "\\Flames.Core\\Application.xaml")]
     public partial class Application : global::MvvmCross.Forms.Core.MvxFormsApplication {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

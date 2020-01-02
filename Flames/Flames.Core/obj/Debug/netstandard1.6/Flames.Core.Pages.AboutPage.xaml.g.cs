@@ -11,7 +11,8 @@
 namespace Flames.Core.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hameed\\source\\repos\\Flames\\Flames\\Flames.Core\\Pages\\AboutPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hameed\\Documents\\GitHub\\Flames\\Flames-cross-platform-application-\\Flames" +
+        "\\Flames.Core\\Pages\\AboutPage.xaml")]
     public partial class AboutPage : global::MvvmCross.Forms.Core.MvxContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
