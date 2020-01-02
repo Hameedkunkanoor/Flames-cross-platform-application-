@@ -1,0 +1,11 @@
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\bin\Debug\netstandard1.6\Flames.Core.deps.json
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\bin\Debug\netstandard1.6\Flames.Core.dll
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\bin\Debug\netstandard1.6\Flames.Core.pdb
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.csprojAssemblyReference.cache
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.Pages.AboutPage.xaml.g.cs
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.Application.xaml.g.cs
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.AssemblyInfoInputs.cache
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.AssemblyInfo.cs
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.dll
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.pdb
+C:\Users\Hameed\source\repos\Flames\Flames\Flames.Core\obj\Debug\netstandard1.6\Flames.Core.Pages.FlamesPage.xaml.g.cs

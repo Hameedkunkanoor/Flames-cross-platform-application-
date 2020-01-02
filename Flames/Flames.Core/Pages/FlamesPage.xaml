@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mvx:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:forms="using:Xamarin.Forms" xmlns:mvx="clr-namespace:MvvmCross.Forms.Core;assembly=MvvmCross.Forms"
+                    x:Class="Flames.Core.Pages.FlamesPage"  BackgroundColor="White"  NavigationPage.HasNavigationBar="True"
+                    NavigationPage.HasBackButton="False"
+                    Title="Flames For you">
+    <mvx:MvxContentPage.Padding Thickness="5, 0, 5, 5">
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="Android" Value="5, 0, 5, 0" />
+            <On Platform="iOS" Value="5, 20, 5, 0" />
+        </OnPlatform>
+    </mvx:MvxContentPage.Padding>
+    <Grid Padding="10,10,10,10" >
+
+        <Grid.RowDefinitions >
+            <RowDefinition Height="0.5*" />
+           
+            <RowDefinition Height="0.3*" />
+            
+           
+
+        </Grid.RowDefinitions>
+        <StackLayout  Grid.Row="0">
+            <StackLayout Padding="15,10,15,15" >
+
+                <Label Font="!6" Text="First Name" TextColor="Orange" />
+                
+                <Frame HeightRequest="40"  Padding="0"  CornerRadius="10" OutlineColor="Red" >
+                    <Entry  HorizontalOptions="FillAndExpand" 
+                            Placeholder="Enter Your Name"    VerticalOptions="FillAndExpand"
+                            FontSize="Large" HeightRequest="40" BackgroundColor="Green"   
+                            Text="{Binding FirstName,Mode=TwoWay}" TextColor="Red"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout >
+
+                <Label Text="Second Name" TextColor="Orange" />
+                <Frame HeightRequest="40" Padding="0" CornerRadius="10" OutlineColor="Red">
+                    <Entry InputTransparent="True"  Text="{Binding SecondName,Mode=TwoWay}" TextColor="Red"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+
+            
+           
+                <Button Text="Find" Command="{Binding FindFlames}" BorderColor="Red" TextColor="White" BackgroundColor="Orange"/>
+   
+        </StackLayout>
+
+    </Grid>
+</mvx:MvxContentPage>
