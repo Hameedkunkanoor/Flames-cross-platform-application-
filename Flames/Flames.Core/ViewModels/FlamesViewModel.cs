@@ -67,8 +67,15 @@ namespace Flames.Core.ViewModels
             }
         }
 
-       // public string Hello => $"Hello {YourNickname}";
-
+        // public string Hello => $"Hello {YourNickname}";
+        
+             public ICommand ClosePopup => new Command(CloseFlamesPopup);
+        private void  CloseFlamesPopup()
+        {
+            ShowFlamesResult = false;
+            FirstName = string.Empty;
+            SecondName = string.Empty;
+        }
         public ICommand FindFlames => new Command(DoFlames);
         private void DoFlames()
         {
