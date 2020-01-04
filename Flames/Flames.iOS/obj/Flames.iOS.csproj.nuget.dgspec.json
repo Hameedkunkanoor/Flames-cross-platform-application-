@@ -67,16 +67,12 @@
               "target": "Package",
               "version": "[1.6.1, )",
               "autoReferenced": true
-            },
-            "Xamarin.Forms": {
-              "target": "Package",
-              "version": "[2.3.4.270, )"
             }
           },
           "imports": [
             "portable-net45+win8+wpa81"
           ],
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -140,7 +136,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[2.3.4.270, )"
+              "version": "[4.4.0.991265, )"
             }
           }
         }

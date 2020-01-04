@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
         
         <StackLayout Grid.Row="0"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-            <StackLayout  HeightRequest="55" BackgroundColor="Orange" VerticalOptions="Start">
+            <StackLayout Padding="0,10,0,0"  HeightRequest="55" BackgroundColor="Orange" VerticalOptions="Fill">
             <Label HorizontalOptions="Center" VerticalOptions="Center" Font="30" Text="Flames It Now" FontFamily="cursive" TextColor="White"/>
         </StackLayout>
         </StackLayout>
@@ -32,20 +32,25 @@
         <StackLayout  Grid.Row="1" Padding="0,0,0,0">
             <StackLayout Padding="10,10,10,15" HorizontalOptions="StartAndExpand"  >
 
-                <Label HorizontalOptions="Start" HorizontalTextAlignment="Start" FontFamily="cursive"  Font="22" Text="First Name" TextColor="Orange" />
+                <Label HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" FontFamily="cursive"  Font="22" Text="First Name" TextColor="Orange" />
 
-                <Frame  WidthRequest="300" HeightRequest="50"  HorizontalOptions="FillAndExpand" Padding="0"  CornerRadius="10" OutlineColor="Green" >
-                    <local:HameedEntry  WidthRequest="300"  HorizontalOptions="FillAndExpand" 
-                            Placeholder="Enter Your Name" PlaceholderColor="#F3F3D5" FontSize="Large"    VerticalOptions="FillAndExpand"
-                                BackgroundColor="White"
+                <Frame  Padding="10,0,10,0"  WidthRequest="360"  HorizontalOptions="CenterAndExpand"  HeightRequest="50" CornerRadius="10" OutlineColor="Green">
+                    <local:HameedEntry  WidthRequest="360"  HorizontalOptions="FillAndExpand" PlaceholderColor="#F3F3D5"
+                            Placeholder="Enter Your Name" FontSize="Large"    VerticalOptions="FillAndExpand"
+                             HeightRequest="40" BackgroundColor="White" 
                             Text="{Binding FirstName,Mode=TwoWay}" TextColor="Red"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="10,15,10,15" >
+                <Frame WidthRequest="55" HeightRequest="35" CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center"  BackgroundColor="Orange" OutlineColor="Red">
+                    <Label Font="24" Text="With" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontFamily="cursive"/>
                 </Frame>
             </StackLayout>
             <StackLayout  Padding="10,10,10,15" HorizontalOptions="StartAndExpand" >
 
-                <Label HorizontalOptions="Start" HorizontalTextAlignment="Start" Font="22"  Text="Second Name" TextColor="Orange" />
-                <Frame  WidthRequest="300"  HorizontalOptions="FillAndExpand"  HeightRequest="50" Padding="0" CornerRadius="10" OutlineColor="Green">
-                    <local:HameedEntry  WidthRequest="300" HorizontalOptions="FillAndExpand" PlaceholderColor="#F3F3D5"
+                <Label HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" Font="22"  Text="Second Name" TextColor="Orange" />
+                <Frame  Padding="10,0,10,0"  WidthRequest="360"  HorizontalOptions="CenterAndExpand"  HeightRequest="50" CornerRadius="10" OutlineColor="Green">
+                    <local:HameedEntry  WidthRequest="360"  HorizontalOptions="FillAndExpand" PlaceholderColor="#F3F3D5"
                             Placeholder="Enter Your Name" FontSize="Large"    VerticalOptions="FillAndExpand"
                              HeightRequest="40" BackgroundColor="White"  
                                         Text="{Binding SecondName,Mode=TwoWay}" TextColor="Red"/>
@@ -61,15 +66,27 @@
                         
                         WidthRequest="175" HeightRequest="55"   BorderColor="Red"
                         TextColor="White" BackgroundColor="Orange"/>
-   
+           
         </StackLayout>
-        <ContentView BackgroundColor="#FFFFCB00" IsVisible="{Binding ShowFlamesResult}" Grid.RowSpan="3" >
+        <ContentView BackgroundColor="#C0F0FFFF" IsVisible="{Binding ShowFlamesResult}" Grid.RowSpan="3" >
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center"   >
-                <Frame  WidthRequest="300" HeightRequest="300" BackgroundColor="#FB7837" CornerRadius="25" >
-                    <StackLayout >
-                        <Label HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontFamily="cursive" FontSize="Large" Text="{Binding FlamesResult,Mode=TwoWay}"/>
-                        <Button HorizontalOptions="Center" VerticalOptions="End"  BackgroundColor="Transparent" Text="Cancel" Command="{Binding ClosePopup}" TextColor="White"/>
-                    </StackLayout>
+                <Frame  WidthRequest="200" HeightRequest="200" BackgroundColor="Orange" CornerRadius="25" >
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.2*" />
+                                <RowDefinition Height="0.6*" />
+                                <RowDefinition Height="0.2*" />
+
+                            </Grid.RowDefinitions>
+  
+                       
+                       <Label Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontFamily="cursive" FontSize="Large" Text="{Binding FlamesResult,Mode=TwoWay}"/>
+                        <Image Grid.Row="1" HeightRequest="75" WidthRequest="75" Source="flames.jpg" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Orange"></Image>
+                        <Button Grid.Row="2" BorderRadius="15" BorderWidth="7" HorizontalOptions="Center" VerticalOptions="End"  BackgroundColor="Transparent" Text="Cancel" Command="{Binding ClosePopup}" TextColor="White"/>
+    </Grid>
+    </StackLayout>
 
                 </Frame>
                   </StackLayout>

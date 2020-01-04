@@ -14,8 +14,7 @@
           "MvvmCross.Core": "5.2.1",
           "MvvmCross.Forms": "5.2.1",
           "MvvmCross.Platform": "5.2.1",
-          "NETStandard.Library": "1.6.1",
-          "Xamarin.Forms": "2.3.4.270"
+          "NETStandard.Library": "1.6.1"
         },
         "runtime": {
           "Flames.Core.dll": {}
@@ -65,7 +64,7 @@
       "MvvmCross.Forms/5.2.1": {
         "dependencies": {
           "MvvmCross.Core": "5.2.1",
-          "Xamarin.Forms": "2.3.4.270"
+          "Xamarin.Forms": "2.3.4.247"
         },
         "runtime": {
           "lib/portable-net45+netcore45+wpa81+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.dll": {
@@ -876,7 +875,7 @@
           }
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.4.247": {
         "runtime": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
@@ -1446,12 +1445,12 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Xamarin.Forms/2.3.4.270": {
+    "Xamarin.Forms/2.3.4.247": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D4QNulRsghAnjGefCuxvHaH9xLdk9gmSrqSoyIH9YqRa/+HNil7nLCt3Dwb7np1eNlKD6AoW+Kgv9Umur/yoUQ==",
-      "path": "xamarin.forms/2.3.4.270",
-      "hashPath": "xamarin.forms.2.3.4.270.nupkg.sha512"
+      "sha512": "sha512-+6VN8IBSah7EcNJ4SV3pIhNA8tNlBaPLfr3+hQpPIllueJrXI5QtjM0tAJusPc2V1cYyC4YKvA1fs5c/A8RrBw==",
+      "path": "xamarin.forms/2.3.4.247",
+      "hashPath": "xamarin.forms.2.3.4.247.nupkg.sha512"
     }
   }
 }

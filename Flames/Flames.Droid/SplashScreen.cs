@@ -5,10 +5,11 @@ using Xamarin.Forms;
 
 namespace Flames.Droid
 {
+
     [Activity(
         Label = "Flames"
         , MainLauncher = true
-        , Icon = "@mipmap/ic_launcher"
+        , Icon = "@mipmap/flames"
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]
